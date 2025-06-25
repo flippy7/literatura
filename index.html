@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Соня Мармеладова - анализ образа</title>
+    <style>
+        :root {
+            --primary-color: #8e44ad;
+            --secondary-color: #9b59b6;
+            --text-color: #333;
+            --light-color: #f5eef8;
+            --dark-color: #2c3e50;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-style: italic;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            position: relative;
+            padding-left: 1rem;
+        }
+        
+        h2:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 4px;
+            background: var(--primary-color);
+        }
+        
+        p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+        
+        ul {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .term {
+            font-style: italic;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        .quote {
+            font-style: italic;
+            padding: 1rem;
+            background-color: var(--light-color);
+            border-left: 4px solid var(--secondary-color);
+            margin: 1.5rem 0;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        /* Гамбургер меню */
+        .menu-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .menu-btn:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .menu-btn span {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: white;
+            margin: 2px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .menu {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 300px;
+            height: 100%;
+            background-color: white;
+            box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+            z-index: 999;
+            transition: right 0.3s ease;
+            padding: 80px 20px 20px;
+            overflow-y: auto;
+        }
+        
+        .menu.active {
+            right: 0;
+        }
+        
+        .menu a {
+            display: block;
+            padding: 10px 15px;
+            color: var(--text-color);
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+            transition: all 0.2s ease;
+        }
+        
+        .menu a:hover {
+            color: var(--primary-color);
+            background-color: var(--light-color);
+            padding-left: 20px;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            section {
+                padding: 2rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Гамбургер меню -->
+    <div class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <nav class="menu">
+        <a href="#place">Место в системе образов</a>
+        <a href="#characteristic">Характеристика персонажа</a>
+        <a href="#author-attitude">Авторское отношение</a>
+        <a href="#creation-methods">Способы создания характера</a>
+        <a href="#influence">Влияние на проблематику</a>
+        <a href="#subjective">Субъективное отношение</a>
+    </nav>
+    
+    <header>
+        <div class="container">
+            <h1>Соня Мармеладова</h1>
+            <p class="subtitle">Анализ образа из романа Ф.М. Достоевского "Преступление и наказание"</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section id="place">
+            <h2>Место персонажа в системе образов произведения</h2>
+            <p>Соня Мармеладова выполняет в романе несколько важных функций. В <span class="term">системе персонажей</span> она представляет собой <span class="term">антитезу</span> Раскольникову, воплощая идею смирения и искупления через страдание. Ее образ контрастирует с главным героем, создавая <span class="term">полифоничность</span> произведения.</p>
+            
+            <p>Соня является <span class="term">идеологическим двойником</span> Раскольникова - оба они переступили нравственные законы, но сделали это по разным причинам и с разными последствиями. В то же время она выступает как <span class="term">проводник</span> христианских идей в романе.</p>
+            
+            <div class="image-container">
+                <img src="350_0_678a35183c6cb920fbf862d2f94416f3.png" alt="Иллюстрация Сони Мармеладовой" width="500">
+                <p><em>Иллюстрация к роману "Преступление и наказание"</em></p>
+            </div>
+        </section>
+        
+        <section id="characteristic">
+            <h2>Характеристика персонажа</h2>
+            
+            <h3>Социальное положение</h3>
+            <p>Соня принадлежит к самым низшим слоям общества. Она вынуждена заниматься <span class="term">проституцией</span>, чтобы содержать семью, что делает ее <span class="term">маргинальным персонажем</span>. Однако ее духовная сущность противоречит этому положению.</p>
+            
+            <h3>Внешность</h3>
+            <p>Достоевский описывает Соню как "худенькую, маленькую, лет восемнадцати, блондинку, с замечательными голубыми глазами". Ее внешность подчеркивает хрупкость и чистоту, контрастируя с ее социальной ролью.</p>
+            
+            <div class="quote">
+                "Она была худенькая, маленькая, лет восемнадцати, блондинка, с замечательными голубыми глазами..."
+            </div>
+            
+            <h3>Мировоззрение</h3>
+            <p>Соня - глубоко религиозный человек. Ее мировоззрение основано на христианских ценностях: <span class="term">смирении</span>, <span class="term">самопожертвовании</span> и <span class="term">всепрощении</span>. Она верит, что через страдание можно достичь искупления.</p>
+            
+            <h3>Отношение к окружающим</h3>
+            <p>Соня проявляет <span class="term">альтруизм</span> по отношению ко всем: к пьющему отцу, больной мачехе, ее детям, Раскольникову. Ее любовь носит <span class="term">агапейческий</span> характер - безусловная и жертвенная.</p>
+            
+            <h3>Особенности внутренних переживаний</h3>
+            <p>Несмотря на внешнее смирение, Соня переживает глубокий внутренний конфликт между чувством греха и желанием спасти близких. Ее <span class="term">психологизм</span> проявляется в молчаливых страданиях и тихих слезах.</p>
+        </section>
+        
+        <section id="author-attitude">
+            <h2>Авторское отношение к герою</h2>
+            <p>Достоевский изображает Соню с явной <span class="term">симпатией</span> и <span class="term">состраданием</span>. Авторское отношение выражено через:</p>
+            <ul>
+                <li><span class="term">Портретную характеристику</span> - подчеркивание ее чистоты и невинности</li>
+                <li><span class="term">Речевую характеристику</span> - простую, искреннюю речь</li>
+                <li><span class="term">Сюжетную функцию</span> - именно Соня становится спасительницей Раскольникова</li>
+                <li><span class="term">Символику</span> - ассоциации с библейской Марией Магдалиной</li>
+            </ul>
+            
+            <p>Через образ Сони автор выражает свою веру в спасительную силу христианской любви и <span class="term">искупительного страдания</span>.</p>
+        </section>
+        
+        <section id="creation-methods">
+            <h2>Способы создания характера героя</h2>
+            <p>Достоевский использует различные <span class="term">художественные средства</span> для раскрытия образа Сони:</p>
+            
+            <h3>Портрет</h3>
+            <p>Контраст между внешней хрупкостью и внутренней силой создает <span class="term">психологический параллелизм</span>.</p>
+            
+            <h3>Прямая характеристика от автора</h3>
+            <p>Автор подчеркивает ее "необыкновенное лицо", способное преображаться от внутреннего света.</p>
+            
+            <h3>Характеристика от других героев</h3>
+            <p>Мармеладов называет ее "смиренной", Раскольников сначала презирает, затем преклоняется перед ней.</p>
+            
+            <h3>Поступки</h3>
+            <p>Самопожертвование ради семьи, готовность последовать за Раскольниковым на каторгу раскрывают ее характер.</p>
+            
+            <h3>Речевые особенности</h3>
+            <p>Простая, искренняя речь, часто прерываемая слезами. Использование библейских цитат ("Что бы я без бога-то была?").</p>
+            
+            <h3>Внутренние монологи самого героя</h3>
+            <p>Хотя у Сони мало внутренних монологов, ее редкие высказывания раскрывают глубину переживаний.</p>
+            
+            <div class="quote">
+                "Что бы я без бога-то была? Что бы я с собою-то делала?"
+            </div>
+        </section>
+        
+        <section id="influence">
+            <h2>Влияние образа героя на проблематику и идейное содержание произведения</h2>
+            <p>Образ Сони играет ключевую роль в <span class="term">идейно-тематической структуре</span> романа:</p>
+            <ul>
+                <li>Она воплощает <span class="term">антитезу</span> теории Раскольникова о "праве сильной личности"</li>
+                <li>Ее судьба поднимает проблему <span class="term">социальной несправедливости</span></li>
+                <li>Через ее образ раскрывается тема <span class="term">искупления через страдание</span></li>
+                <li>Она становится носителем <span class="term">христианской морали</span> в противовес нигилизму</li>
+                <li>Ее отношения с Раскольниковым развивают тему <span class="term">спасения через любовь</span></li>
+            </ul>
+            
+            <p>Финал романа, где Соня следует за Раскольниковым на каторгу, символизирует возможность <span class="term">нравственного возрождения</span> через веру и любовь.</p>
+        </section>
+        
+        <section id="subjective">
+            <h2>Субъективное отношение к герою</h2>
+            <p>Соня Мармеладова вызывает у меня глубокое сочувствие и восхищение. Несмотря на все испытания, она сохраняет <span class="term">духовную чистоту</span> и способность к самопожертвованию.</p>
+            
+            <p>Ее образ особенно актуален сегодня, когда так много людей страдает от социального неравенства. Соня показывает, что даже в самых тяжелых условиях можно сохранить человеческое достоинство.</p>
+            
+            <p>Меня поражает ее <span class="term">нравственная стойкость</span> - она не озлобилась на мир, а напротив, готова помогать даже тем, кто ее осуждает. Ее вера не показная, а искренняя, выстраданная.</p>
+            
+            <p>Думаю, именно такие персонажи, как Соня, делают Достоевского великим писателем - он показывает <span class="term">глубину человеческой души</span> в самых сложных обстоятельствах.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>Анализ образа Сони Мармеладовой из романа Ф.М. Достоевского "Преступление и наказание"</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Плавная прокрутка для всех ссылок
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Закрываем меню после клика (для мобильных устройств)
+                document.querySelector('.menu').classList.remove('active');
+                document.querySelector('.menu-btn').classList.remove('active');
+            });
+        });
+        
+        // Гамбургер меню
+        const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector('.menu');
+        
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        });
+        
+        // Закрытие меню при клике вне его области
+        document.addEventListener('click', (e) => {
+            if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+                menu.classList.remove('active');
+                menuBtn.classList.remove('active');
+            }
+        });
+        
+        // Анимация гамбургер-иконки
+        menuBtn.addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
